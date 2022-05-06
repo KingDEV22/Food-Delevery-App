@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegistrationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/register_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="12dp"
+        android:padding="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/name"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/name"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edtEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/email_address"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edtDeliveryAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/delivery_address"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="10dp"
+                android:hint="@string/delivery_address"
+                android:inputType="textPostalAddress"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edtRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/enter_password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_password"
+                android:inputType="numberPassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/edtRegConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="@string/enter_password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="@string/confirm_password"
+                android:inputType="numberPassword"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:theme="@style/ThemeOverlay.AppCompat" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                app:cardBackgroundColor="@color/yellow"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/btnRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="@string/register"
+                    android:textAppearance="?android:attr/textAppearanceButton"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/ic_register" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
